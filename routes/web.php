@@ -88,8 +88,8 @@ Route::post('/visit/{link}',[VisitController::class,'store']);
 
 
 
-Route::get('/{user}',[UserController::class,'show'])->name('user.show')
-->middleware('check-year');
+Route::get('/{user}',[UserController::class,'show'])->name('user.show');
+//->middleware('check-year');
 
 
 
